@@ -1,0 +1,442 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		835F2474678945415A301A83 /* libPods-MRAuthorizationSample.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B374FD8BD1D2178FF8D85129 /* libPods-MRAuthorizationSample.a */; };
+		AC2000311ECB44DC005064F4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AC2000301ECB44DC005064F4 /* main.m */; };
+		AC2000341ECB44DC005064F4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AC2000331ECB44DC005064F4 /* AppDelegate.m */; };
+		AC2000371ECB44DC005064F4 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AC2000361ECB44DC005064F4 /* ViewController.m */; };
+		AC20003A1ECB44DC005064F4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC2000381ECB44DC005064F4 /* Main.storyboard */; };
+		AC20003C1ECB44DC005064F4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC20003B1ECB44DC005064F4 /* Assets.xcassets */; };
+		AC20003F1ECB44DC005064F4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC20003D1ECB44DC005064F4 /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		6EA052C9FA242DEF7D3F8E5F /* Pods-MRAuthorizationSample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MRAuthorizationSample.release.xcconfig"; path = "Target Support Files/Pods-MRAuthorizationSample/Pods-MRAuthorizationSample.release.xcconfig"; sourceTree = "<group>"; };
+		855236842063C2300072BFFC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		855236852063C2300072BFFC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		855236892063C2A70072BFFC /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Main.strings; sourceTree = "<group>"; };
+		8552368B2063C2D90072BFFC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
+		858E0F4D2063E88500286AFC /* MRMailSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = MRMailSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8FD6F17522BA58480078D40B /* MRAuthorizationSample.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MRAuthorizationSample.entitlements; sourceTree = "<group>"; };
+		AC20002C1ECB44DC005064F4 /* MRAuthorizationSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MRAuthorizationSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AC2000301ECB44DC005064F4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		AC2000321ECB44DC005064F4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		AC2000331ECB44DC005064F4 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		AC2000351ECB44DC005064F4 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		AC2000361ECB44DC005064F4 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		AC20003B1ECB44DC005064F4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AC2000401ECB44DC005064F4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AC20004C1ECB519F005064F4 /* MRMailSdk.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = MRMailSdk.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B374FD8BD1D2178FF8D85129 /* libPods-MRAuthorizationSample.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MRAuthorizationSample.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		ED896810B22D23D09B7BB305 /* Pods-MRAuthorizationSample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MRAuthorizationSample.debug.xcconfig"; path = "Target Support Files/Pods-MRAuthorizationSample/Pods-MRAuthorizationSample.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AC2000291ECB44DC005064F4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				835F2474678945415A301A83 /* libPods-MRAuthorizationSample.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		00F1ABBCD523D7EFE32C7CCC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				ED896810B22D23D09B7BB305 /* Pods-MRAuthorizationSample.debug.xcconfig */,
+				6EA052C9FA242DEF7D3F8E5F /* Pods-MRAuthorizationSample.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		AC2000231ECB44DB005064F4 = {
+			isa = PBXGroup;
+			children = (
+				AC20002E1ECB44DC005064F4 /* MRAuthorizationSample */,
+				AC20002D1ECB44DC005064F4 /* Products */,
+				AC2000461ECB460B005064F4 /* Frameworks */,
+				00F1ABBCD523D7EFE32C7CCC /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		AC20002D1ECB44DC005064F4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AC20002C1ECB44DC005064F4 /* MRAuthorizationSample.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AC20002E1ECB44DC005064F4 /* MRAuthorizationSample */ = {
+			isa = PBXGroup;
+			children = (
+				AC2000321ECB44DC005064F4 /* AppDelegate.h */,
+				AC2000331ECB44DC005064F4 /* AppDelegate.m */,
+				AC2000351ECB44DC005064F4 /* ViewController.h */,
+				AC2000361ECB44DC005064F4 /* ViewController.m */,
+				8FD6F17522BA58480078D40B /* MRAuthorizationSample.entitlements */,
+				AC2000381ECB44DC005064F4 /* Main.storyboard */,
+				AC20003B1ECB44DC005064F4 /* Assets.xcassets */,
+				AC20003D1ECB44DC005064F4 /* LaunchScreen.storyboard */,
+				AC2000401ECB44DC005064F4 /* Info.plist */,
+				AC20002F1ECB44DC005064F4 /* Supporting Files */,
+			);
+			path = MRAuthorizationSample;
+			sourceTree = "<group>";
+		};
+		AC20002F1ECB44DC005064F4 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				AC2000301ECB44DC005064F4 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		AC2000461ECB460B005064F4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				858E0F4D2063E88500286AFC /* MRMailSDK.framework */,
+				AC20004C1ECB519F005064F4 /* MRMailSdk.framework */,
+				B374FD8BD1D2178FF8D85129 /* libPods-MRAuthorizationSample.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AC20002B1ECB44DC005064F4 /* MRAuthorizationSample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AC2000431ECB44DC005064F4 /* Build configuration list for PBXNativeTarget "MRAuthorizationSample" */;
+			buildPhases = (
+				6B1A117538AE1E9AED062CAD /* [CP] Check Pods Manifest.lock */,
+				AC2000281ECB44DC005064F4 /* Sources */,
+				AC2000291ECB44DC005064F4 /* Frameworks */,
+				AC20002A1ECB44DC005064F4 /* Resources */,
+				469F24EBBED1B57F3F0C01DD /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MRAuthorizationSample;
+			productName = MRAuthorizationSample;
+			productReference = AC20002C1ECB44DC005064F4 /* MRAuthorizationSample.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AC2000241ECB44DB005064F4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = Mail.Ru;
+				TargetAttributes = {
+					AC20002B1ECB44DC005064F4 = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = L2QFT5NA2Q;
+						ProvisioningStyle = Manual;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+							com.apple.Keychain = {
+								enabled = 1;
+							};
+							com.apple.iCloud = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = AC2000271ECB44DB005064F4 /* Build configuration list for PBXProject "MRAuthorizationSample" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				English,
+				en,
+				Base,
+				ru,
+			);
+			mainGroup = AC2000231ECB44DB005064F4;
+			productRefGroup = AC20002D1ECB44DC005064F4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AC20002B1ECB44DC005064F4 /* MRAuthorizationSample */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AC20002A1ECB44DC005064F4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AC20003F1ECB44DC005064F4 /* LaunchScreen.storyboard in Resources */,
+				AC20003C1ECB44DC005064F4 /* Assets.xcassets in Resources */,
+				AC20003A1ECB44DC005064F4 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		469F24EBBED1B57F3F0C01DD /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MRAuthorizationSample/Pods-MRAuthorizationSample-resources.sh",
+				"${PODS_CONFIGURATION_BUILD_DIR}/MRMailSDK/MRMailSDKUI.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MRMailSDKUI.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MRAuthorizationSample/Pods-MRAuthorizationSample-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6B1A117538AE1E9AED062CAD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MRAuthorizationSample-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AC2000281ECB44DC005064F4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AC2000371ECB44DC005064F4 /* ViewController.m in Sources */,
+				AC2000341ECB44DC005064F4 /* AppDelegate.m in Sources */,
+				AC2000311ECB44DC005064F4 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		AC2000381ECB44DC005064F4 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				855236842063C2300072BFFC /* Base */,
+				855236892063C2A70072BFFC /* ru */,
+				8552368B2063C2D90072BFFC /* en */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		AC20003D1ECB44DC005064F4 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				855236852063C2300072BFFC /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AC2000411ECB44DC005064F4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AC2000421ECB44DC005064F4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AC2000441ECB44DC005064F4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = ED896810B22D23D09B7BB305 /* Pods-MRAuthorizationSample.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = MRAuthorizationSample/MRAuthorizationSample.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				DEVELOPMENT_TEAM = L2QFT5NA2Q;
+				INFOPLIST_FILE = MRAuthorizationSample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ru.mail.mail.sdk.MRAuthorizationSample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "4d64de6d-1b14-4a13-8686-a5e0082997fa";
+				PROVISIONING_PROFILE_SPECIFIER = "XC: *";
+			};
+			name = Debug;
+		};
+		AC2000451ECB44DC005064F4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6EA052C9FA242DEF7D3F8E5F /* Pods-MRAuthorizationSample.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = MRAuthorizationSample/MRAuthorizationSample.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				DEVELOPMENT_TEAM = L2QFT5NA2Q;
+				INFOPLIST_FILE = MRAuthorizationSample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ru.mail.mail.sdk.MRAuthorizationSample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "4d64de6d-1b14-4a13-8686-a5e0082997fa";
+				PROVISIONING_PROFILE_SPECIFIER = "XC: *";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AC2000271ECB44DB005064F4 /* Build configuration list for PBXProject "MRAuthorizationSample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AC2000411ECB44DC005064F4 /* Debug */,
+				AC2000421ECB44DC005064F4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AC2000431ECB44DC005064F4 /* Build configuration list for PBXNativeTarget "MRAuthorizationSample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AC2000441ECB44DC005064F4 /* Debug */,
+				AC2000451ECB44DC005064F4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AC2000241ECB44DB005064F4 /* Project object */;
+}
