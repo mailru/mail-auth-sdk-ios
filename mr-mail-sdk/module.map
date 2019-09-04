@@ -1,0 +1,13 @@
+framework module MRMailSDK
+{
+    header "MRMailSDK.h"
+    header "MRMailSDKConstants.h"
+    header "MRMailSDK+MailSignIn.h"
+    export *
+
+    explicit module MRMailSDK_Private
+    {
+        header "MRMailSDK+Private.h"
+        export *
+    }
+}

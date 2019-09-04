@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14854.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="HHo-W5-5jD">
+    <device id="retina5_9" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14806.4"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="zcZ-A0-riY">
+            <objects>
+                <navigationController id="HHo-W5-5jD" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="wM8-RF-WsY">
+                        <rect key="frame" x="0.0" y="44" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="ccY-yv-Ycu"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="K8o-dh-2T0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-660" y="139"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="ORe-bg-jOx">
+                                <rect key="frame" x="8" y="88" width="359" height="690"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalCompressionResistancePriority="751" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lgj-Io-qK4">
+                                        <rect key="frame" x="0.0" y="0.0" width="359" height="462"/>
+                                        <color key="backgroundColor" red="0.19607843137254902" green="0.5568627451" blue="0.87843137250000003" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dYi-ae-NWa">
+                                        <rect key="frame" x="0.0" y="482" width="359" height="30"/>
+                                        <state key="normal" title="PRESS FOR AUTHORIZATION"/>
+                                        <connections>
+                                            <action selector="didPressAuthorizeButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kNl-57-cbd"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GZC-RY-Wjy">
+                                        <rect key="frame" x="0.0" y="532" width="359" height="30"/>
+                                        <state key="normal" title="PRESS FOR INTERNAL AUTHORIZATION"/>
+                                        <connections>
+                                            <action selector="didPressInternalAuthorizeButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="VeQ-xz-2U5"/>
+                                        </connections>
+                                    </button>
+                                    <stackView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" distribution="equalSpacing" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="9Yr-xH-v0L">
+                                        <rect key="frame" x="0.0" y="582" width="359" height="44"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Use Safari for internal authorization" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RfY-dH-sHa">
+                                                <rect key="frame" x="0.0" y="11.999999999999998" width="269.66666666666669" height="20.333333333333329"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="755" verticalHuggingPriority="750" horizontalCompressionResistancePriority="751" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="YNl-Se-Prb">
+                                                <rect key="frame" x="310" y="6.6666666666666288" width="51" height="31"/>
+                                                <connections>
+                                                    <action selector="didChangeValueInSafariSwitchControl:" destination="BYZ-38-t0r" eventType="valueChanged" id="2Ud-0i-u3g"/>
+                                                </connections>
+                                            </switch>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="44" id="8F8-wi-mmx"/>
+                                        </constraints>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" distribution="equalSpacing" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="tWR-s7-efc">
+                                        <rect key="frame" x="0.0" y="646" width="359" height="44"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="249" horizontalCompressionResistancePriority="760" text="Use test hosts for internal authorization" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8qs-a4-KDo">
+                                                <rect key="frame" x="0.0" y="11.999999999999998" width="290" height="20.333333333333329"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="800" verticalHuggingPriority="750" horizontalCompressionResistancePriority="800" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Ykf-vh-UYh">
+                                                <rect key="frame" x="310" y="6.6666666666666288" width="51" height="31"/>
+                                                <connections>
+                                                    <action selector="didChangeValueInTestHostsSwitchControl:" destination="BYZ-38-t0r" eventType="valueChanged" id="urC-xW-eVH"/>
+                                                </connections>
+                                            </switch>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="44" id="q2z-vh-ZLq"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="ORe-bg-jOx" firstAttribute="leading" secondItem="Kof-Ly-3m8" secondAttribute="leading" constant="8" id="2s0-dY-wk7"/>
+                            <constraint firstItem="Kof-Ly-3m8" firstAttribute="bottom" secondItem="ORe-bg-jOx" secondAttribute="bottom" id="64S-j0-bTU"/>
+                            <constraint firstItem="ORe-bg-jOx" firstAttribute="top" secondItem="Kof-Ly-3m8" secondAttribute="top" id="RGI-o7-jrQ"/>
+                            <constraint firstItem="Kof-Ly-3m8" firstAttribute="trailing" secondItem="ORe-bg-jOx" secondAttribute="trailing" constant="8" id="WfN-W1-mOw"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Kof-Ly-3m8"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="9mZ-Pv-0nN"/>
+                    <connections>
+                        <outlet property="resultLabel" destination="lgj-Io-qK4" id="ise-1P-Zcp"/>
+                        <outlet property="switchHostsControl" destination="Ykf-vh-UYh" id="dSn-Hb-qOh"/>
+                        <outlet property="switchSafariControl" destination="YNl-Se-Prb" id="3kh-wN-dhs"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="138.91625615763547"/>
+        </scene>
+    </scenes>
+</document>

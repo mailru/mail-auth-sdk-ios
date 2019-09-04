@@ -1,0 +1,556 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		82B6606E80161CAC496D27E3 /* UIApplication+MRSDK.m in Sources */ = {isa = PBXBuildFile; fileRef = 82B6665130DA2C488D5A28D6 /* UIApplication+MRSDK.m */; };
+		82B660FA56E4400954A92B6A /* NSURL+MRSDK.m in Sources */ = {isa = PBXBuildFile; fileRef = 82B6616467A0F15C0632D82D /* NSURL+MRSDK.m */; };
+		82B661CE2326C333FEF6D58E /* MRMailAuthParameters+QueryItems.h in Headers */ = {isa = PBXBuildFile; fileRef = 82B6606ED58CFC8C86042972 /* MRMailAuthParameters+QueryItems.h */; };
+		82B661D67BDFA6B3A84B70A6 /* MRMailAuthParameters.h in Headers */ = {isa = PBXBuildFile; fileRef = 82B666AAC9E92CB781AAC2F5 /* MRMailAuthParameters.h */; };
+		82B662E62FF73E77D9E554B9 /* NSError+MRSDK.m in Sources */ = {isa = PBXBuildFile; fileRef = 82B66C23B51518EBD3292DA0 /* NSError+MRSDK.m */; };
+		82B663FCE82AF0111156A281 /* NSError+MRSDK.h in Headers */ = {isa = PBXBuildFile; fileRef = 82B661F5FB0AE87744780F05 /* NSError+MRSDK.h */; };
+		82B6653120EE503D7EFD073E /* MRMailSDKConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 82B664E33F259CADD8564C0D /* MRMailSDKConstants.m */; };
+		82B665A9657B42563FD6E8DC /* MRMailSDKConstants.h in Headers */ = {isa = PBXBuildFile; fileRef = 82B66FAB6995601B80F69382 /* MRMailSDKConstants.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		82B6666286F582FE3B413A6F /* MRSafariAuthHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 82B662F53D6AE4E67ACAB6BD /* MRSafariAuthHandler.m */; };
+		82B66913D7B040638A91E01E /* UIApplication+MRSDK.h in Headers */ = {isa = PBXBuildFile; fileRef = 82B66EA28A5BC39FF35993FA /* UIApplication+MRSDK.h */; };
+		82B6695881C8CBA239F21167 /* MRSafariAuthHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = 82B66431373E020E81F348CE /* MRSafariAuthHandler.h */; };
+		82B669885D88BD29E04E28C8 /* MRWebViewAuthHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = 82B664D620887EE994A51830 /* MRWebViewAuthHandler.h */; };
+		82B669CB8EBD1C6E043F7098 /* MRInternalAuthHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = 82B66AAE30DDA0E84ED875A4 /* MRInternalAuthHandler.h */; };
+		82B66B32D87BEAF216CDD281 /* NSURL+MRSDK.h in Headers */ = {isa = PBXBuildFile; fileRef = 82B66A7994D5940842FC6499 /* NSURL+MRSDK.h */; };
+		82B66CE63DE49EA273817E86 /* MRWebViewAuthHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 82B66C68AEDF4F16CB28442C /* MRWebViewAuthHandler.m */; };
+		82B66CF9E4E32AC4FD42E5F2 /* MRMailSDK+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 82B66BA82B60C450E0983236 /* MRMailSDK+Private.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		82B66E508277F1634F11CFD0 /* MRMailAuthParameters+Protected.h in Headers */ = {isa = PBXBuildFile; fileRef = 82B66D367795919A6D6086E7 /* MRMailAuthParameters+Protected.h */; };
+		82B66E9BB01F7629D86EED96 /* MRMailAuthParameters.m in Sources */ = {isa = PBXBuildFile; fileRef = 82B661947CBF290DAA686618 /* MRMailAuthParameters.m */; };
+		82B66FE702049C5DE0F66B14 /* MRMailAuthParameters+QueryItems.m in Sources */ = {isa = PBXBuildFile; fileRef = 82B66A9D6C72BB44A8B9216C /* MRMailAuthParameters+QueryItems.m */; };
+		8552367C2063BF730072BFFC /* MRMailSDKUI.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8552367E2063BF730072BFFC /* MRMailSDKUI.strings */; };
+		858E0F512063F7A000286AFC /* NSBundle+MRSDK.h in Headers */ = {isa = PBXBuildFile; fileRef = 858E0F4F2063F7A000286AFC /* NSBundle+MRSDK.h */; };
+		858E0F522063F7A000286AFC /* NSBundle+MRSDK.m in Sources */ = {isa = PBXBuildFile; fileRef = 858E0F502063F7A000286AFC /* NSBundle+MRSDK.m */; };
+		85CC3ECC2063A68C0012559E /* MRMailSignInButton.h in Headers */ = {isa = PBXBuildFile; fileRef = 85CC3ECA2063A68C0012559E /* MRMailSignInButton.h */; };
+		85CC3ECD2063A68C0012559E /* MRMailSignInButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 85CC3ECB2063A68C0012559E /* MRMailSignInButton.m */; };
+		85CC3ECF2063B33E0012559E /* MRMailSDKUI.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 85CC3ECE2063B33E0012559E /* MRMailSDKUI.xcassets */; };
+		8F2AFCCB22BA20FF0015AE50 /* MRMailSDK+MailSignIn.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F2AFCCA22BA20FF0015AE50 /* MRMailSDK+MailSignIn.h */; };
+		8F2CA42B1F263C7800C1B94F /* MRSafariSessionAuthHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F2CA4291F263C7800C1B94F /* MRSafariSessionAuthHandler.h */; };
+		8F2CA42C1F263C7800C1B94F /* MRSafariSessionAuthHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F2CA42A1F263C7800C1B94F /* MRSafariSessionAuthHandler.m */; };
+		8F3EFB5722FACE4400136617 /* NSMutableURLRequest+MRSDK.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F3EFB5522FACE4300136617 /* NSMutableURLRequest+MRSDK.h */; };
+		8F3EFB5822FACE4400136617 /* NSMutableURLRequest+MRSDK.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F3EFB5622FACE4400136617 /* NSMutableURLRequest+MRSDK.m */; };
+		8F3EFB5B22FAD3DA00136617 /* MRSDKOAuthTokenResponseParser.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F3EFB5922FAD3DA00136617 /* MRSDKOAuthTokenResponseParser.h */; };
+		8F3EFB5C22FAD3DA00136617 /* MRSDKOAuthTokenResponseParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F3EFB5A22FAD3DA00136617 /* MRSDKOAuthTokenResponseParser.m */; };
+		8F44869B1F26310900E7D646 /* MRMailAuthRedirectURLParser.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F4486991F26310900E7D646 /* MRMailAuthRedirectURLParser.h */; };
+		8F44869C1F26310900E7D646 /* MRMailAuthRedirectURLParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F44869A1F26310900E7D646 /* MRMailAuthRedirectURLParser.m */; };
+		8F6C3BA122FAB6E800B524B6 /* MRSDKAuthorizationResult.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F6C3B9F22FAB6E800B524B6 /* MRSDKAuthorizationResult.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8F6C3BA622FABF6000B524B6 /* MRSDKAuthorizationResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F6C3BA522FABF6000B524B6 /* MRSDKAuthorizationResult.m */; };
+		8F6C3B9D22F9DD8500B524B6 /* NSData+MRSDK.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F6C3B9B22F9DD8500B524B6 /* NSData+MRSDK.h */; };
+		8F6C3B9E22F9DD8500B524B6 /* NSData+MRSDK.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F6C3B9C22F9DD8500B524B6 /* NSData+MRSDK.m */; };
+		AC20FFEC1ECAFC0B005064F4 /* MRMailSDK.h in Headers */ = {isa = PBXBuildFile; fileRef = AC20FFEA1ECAFC0B005064F4 /* MRMailSDK.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AC20FFED1ECAFC0B005064F4 /* MRMailSDK.m in Sources */ = {isa = PBXBuildFile; fileRef = AC20FFEB1ECAFC0B005064F4 /* MRMailSDK.m */; };
+		ACB655011ECEE9CF0049D6F0 /* SafariServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC2000511ECC9B69005064F4 /* SafariServices.framework */; };
+		ACC49BE11ECD8D870021C69C /* MRMailWebViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = ACC49BDE1ECD8D870021C69C /* MRMailWebViewController.h */; };
+		ACC49BE21ECD8D870021C69C /* MRMailWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ACC49BDF1ECD8D870021C69C /* MRMailWebViewController.m */; };
+		ACC49BE51ECD95520021C69C /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACC49BE41ECD95520021C69C /* WebKit.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		82B6606ED58CFC8C86042972 /* MRMailAuthParameters+QueryItems.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MRMailAuthParameters+QueryItems.h"; sourceTree = "<group>"; };
+		82B6616467A0F15C0632D82D /* NSURL+MRSDK.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSURL+MRSDK.m"; sourceTree = "<group>"; };
+		82B661947CBF290DAA686618 /* MRMailAuthParameters.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRMailAuthParameters.m; sourceTree = "<group>"; };
+		82B661F5FB0AE87744780F05 /* NSError+MRSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSError+MRSDK.h"; sourceTree = "<group>"; };
+		82B662F53D6AE4E67ACAB6BD /* MRSafariAuthHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRSafariAuthHandler.m; sourceTree = "<group>"; };
+		82B66431373E020E81F348CE /* MRSafariAuthHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRSafariAuthHandler.h; sourceTree = "<group>"; };
+		82B664D620887EE994A51830 /* MRWebViewAuthHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRWebViewAuthHandler.h; sourceTree = "<group>"; };
+		82B664E33F259CADD8564C0D /* MRMailSDKConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRMailSDKConstants.m; sourceTree = "<group>"; };
+		82B6665130DA2C488D5A28D6 /* UIApplication+MRSDK.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIApplication+MRSDK.m"; sourceTree = "<group>"; };
+		82B666AAC9E92CB781AAC2F5 /* MRMailAuthParameters.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRMailAuthParameters.h; sourceTree = "<group>"; };
+		82B66A7994D5940842FC6499 /* NSURL+MRSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSURL+MRSDK.h"; sourceTree = "<group>"; };
+		82B66A9D6C72BB44A8B9216C /* MRMailAuthParameters+QueryItems.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MRMailAuthParameters+QueryItems.m"; sourceTree = "<group>"; };
+		82B66AAE30DDA0E84ED875A4 /* MRInternalAuthHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRInternalAuthHandler.h; sourceTree = "<group>"; };
+		82B66BA82B60C450E0983236 /* MRMailSDK+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MRMailSDK+Private.h"; sourceTree = "<group>"; };
+		82B66C23B51518EBD3292DA0 /* NSError+MRSDK.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSError+MRSDK.m"; sourceTree = "<group>"; };
+		82B66C68AEDF4F16CB28442C /* MRWebViewAuthHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRWebViewAuthHandler.m; sourceTree = "<group>"; };
+		82B66D367795919A6D6086E7 /* MRMailAuthParameters+Protected.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MRMailAuthParameters+Protected.h"; sourceTree = "<group>"; };
+		82B66EA28A5BC39FF35993FA /* UIApplication+MRSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIApplication+MRSDK.h"; sourceTree = "<group>"; };
+		82B66FAB6995601B80F69382 /* MRMailSDKConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRMailSDKConstants.h; sourceTree = "<group>"; };
+		8552367D2063BF730072BFFC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/MRMailSDKUI.strings; sourceTree = "<group>"; };
+		8552367F2063BF800072BFFC /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/MRMailSDKUI.strings; sourceTree = "<group>"; };
+		858E0F4F2063F7A000286AFC /* NSBundle+MRSDK.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSBundle+MRSDK.h"; sourceTree = "<group>"; };
+		858E0F502063F7A000286AFC /* NSBundle+MRSDK.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSBundle+MRSDK.m"; sourceTree = "<group>"; };
+		85CC3EC92063A4580012559E /* module.map */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.module-map"; path = module.map; sourceTree = "<group>"; };
+		85CC3ECA2063A68C0012559E /* MRMailSignInButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MRMailSignInButton.h; sourceTree = "<group>"; };
+		85CC3ECB2063A68C0012559E /* MRMailSignInButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MRMailSignInButton.m; sourceTree = "<group>"; };
+		85CC3ECE2063B33E0012559E /* MRMailSDKUI.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = MRMailSDKUI.xcassets; sourceTree = "<group>"; };
+		8F2AFCCA22BA20FF0015AE50 /* MRMailSDK+MailSignIn.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MRMailSDK+MailSignIn.h"; sourceTree = "<group>"; };
+		8F2CA4291F263C7800C1B94F /* MRSafariSessionAuthHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MRSafariSessionAuthHandler.h; sourceTree = "<group>"; };
+		8F2CA42A1F263C7800C1B94F /* MRSafariSessionAuthHandler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MRSafariSessionAuthHandler.m; sourceTree = "<group>"; };
+		8F3EFB5522FACE4300136617 /* NSMutableURLRequest+MRSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableURLRequest+MRSDK.h"; sourceTree = "<group>"; };
+		8F3EFB5622FACE4400136617 /* NSMutableURLRequest+MRSDK.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableURLRequest+MRSDK.m"; sourceTree = "<group>"; };
+		8F3EFB5922FAD3DA00136617 /* MRSDKOAuthTokenResponseParser.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MRSDKOAuthTokenResponseParser.h; sourceTree = "<group>"; };
+		8F3EFB5A22FAD3DA00136617 /* MRSDKOAuthTokenResponseParser.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MRSDKOAuthTokenResponseParser.m; sourceTree = "<group>"; };
+		8F4486991F26310900E7D646 /* MRMailAuthRedirectURLParser.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MRMailAuthRedirectURLParser.h; sourceTree = "<group>"; };
+		8F44869A1F26310900E7D646 /* MRMailAuthRedirectURLParser.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MRMailAuthRedirectURLParser.m; sourceTree = "<group>"; };
+		8F6C3B9F22FAB6E800B524B6 /* MRSDKAuthorizationResult.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MRSDKAuthorizationResult.h; sourceTree = "<group>"; };
+		8F6C3BA522FABF6000B524B6 /* MRSDKAuthorizationResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRSDKAuthorizationResult.m; sourceTree = "<group>"; };
+		8F6C3B9B22F9DD8500B524B6 /* NSData+MRSDK.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSData+MRSDK.h"; sourceTree = "<group>"; };
+		8F6C3B9C22F9DD8500B524B6 /* NSData+MRSDK.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSData+MRSDK.m"; sourceTree = "<group>"; };
+		AC1136421EB22CFA007E5E37 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = "mr-mail-sdk/Info.plist"; sourceTree = SOURCE_ROOT; };
+		AC2000511ECC9B69005064F4 /* SafariServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SafariServices.framework; path = System/Library/Frameworks/SafariServices.framework; sourceTree = SDKROOT; };
+		AC20FFEA1ECAFC0B005064F4 /* MRMailSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRMailSDK.h; sourceTree = "<group>"; };
+		AC20FFEB1ECAFC0B005064F4 /* MRMailSDK.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRMailSDK.m; sourceTree = "<group>"; };
+		ACC49BDE1ECD8D870021C69C /* MRMailWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRMailWebViewController.h; sourceTree = "<group>"; };
+		ACC49BDF1ECD8D870021C69C /* MRMailWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRMailWebViewController.m; sourceTree = "<group>"; };
+		ACC49BE41ECD95520021C69C /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		ACF85C341EB0A6FB00534CE4 /* MRMailSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MRMailSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		ACF85C301EB0A6FB00534CE4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ACB655011ECEE9CF0049D6F0 /* SafariServices.framework in Frameworks */,
+				ACC49BE51ECD95520021C69C /* WebKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		82B660F80EC64A0894E987F6 /* utils */ = {
+			isa = PBXGroup;
+			children = (
+				82B6665130DA2C488D5A28D6 /* UIApplication+MRSDK.m */,
+				82B66EA28A5BC39FF35993FA /* UIApplication+MRSDK.h */,
+				82B661F5FB0AE87744780F05 /* NSError+MRSDK.h */,
+				82B66C23B51518EBD3292DA0 /* NSError+MRSDK.m */,
+				82B6616467A0F15C0632D82D /* NSURL+MRSDK.m */,
+				82B66A7994D5940842FC6499 /* NSURL+MRSDK.h */,
+				858E0F4F2063F7A000286AFC /* NSBundle+MRSDK.h */,
+				858E0F502063F7A000286AFC /* NSBundle+MRSDK.m */,
+				8F3EFB5522FACE4300136617 /* NSMutableURLRequest+MRSDK.h */,
+				8F3EFB5622FACE4400136617 /* NSMutableURLRequest+MRSDK.m */,
+				8F6C3B9B22F9DD8500B524B6 /* NSData+MRSDK.h */,
+				8F6C3B9C22F9DD8500B524B6 /* NSData+MRSDK.m */,
+			);
+			path = utils;
+			sourceTree = "<group>";
+		};
+		82B6638007C6A5674DDF380B /* core */ = {
+			isa = PBXGroup;
+			children = (
+				82B661947CBF290DAA686618 /* MRMailAuthParameters.m */,
+				82B666AAC9E92CB781AAC2F5 /* MRMailAuthParameters.h */,
+				82B66D367795919A6D6086E7 /* MRMailAuthParameters+Protected.h */,
+				82B66A9D6C72BB44A8B9216C /* MRMailAuthParameters+QueryItems.m */,
+				82B6606ED58CFC8C86042972 /* MRMailAuthParameters+QueryItems.h */,
+				8F4486991F26310900E7D646 /* MRMailAuthRedirectURLParser.h */,
+				8F44869A1F26310900E7D646 /* MRMailAuthRedirectURLParser.m */,
+				8F3EFB5922FAD3DA00136617 /* MRSDKOAuthTokenResponseParser.h */,
+				8F3EFB5A22FAD3DA00136617 /* MRSDKOAuthTokenResponseParser.m */,
+			);
+			path = core;
+			sourceTree = "<group>";
+		};
+		82B66C09E3CDA812DDFDF859 /* ui */ = {
+			isa = PBXGroup;
+			children = (
+				82B66AAE30DDA0E84ED875A4 /* MRInternalAuthHandler.h */,
+				ACC49BDE1ECD8D870021C69C /* MRMailWebViewController.h */,
+				ACC49BDF1ECD8D870021C69C /* MRMailWebViewController.m */,
+				82B66C68AEDF4F16CB28442C /* MRWebViewAuthHandler.m */,
+				82B664D620887EE994A51830 /* MRWebViewAuthHandler.h */,
+				82B662F53D6AE4E67ACAB6BD /* MRSafariAuthHandler.m */,
+				82B66431373E020E81F348CE /* MRSafariAuthHandler.h */,
+				8F2CA4291F263C7800C1B94F /* MRSafariSessionAuthHandler.h */,
+				8F2CA42A1F263C7800C1B94F /* MRSafariSessionAuthHandler.m */,
+				85CC3ECA2063A68C0012559E /* MRMailSignInButton.h */,
+				85CC3ECB2063A68C0012559E /* MRMailSignInButton.m */,
+				8552367E2063BF730072BFFC /* MRMailSDKUI.strings */,
+				85CC3ECE2063B33E0012559E /* MRMailSDKUI.xcassets */,
+			);
+			path = ui;
+			sourceTree = "<group>";
+		};
+		8F5EB0BC22BBBED900141465 /* mail-sign-in */ = {
+			isa = PBXGroup;
+			children = (
+				8F2AFCCA22BA20FF0015AE50 /* MRMailSDK+MailSignIn.h */,
+			);
+			path = "mail-sign-in";
+			sourceTree = "<group>";
+		};
+		AC2000501ECC9B69005064F4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				ACC49BE41ECD95520021C69C /* WebKit.framework */,
+				AC2000511ECC9B69005064F4 /* SafariServices.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AC20FFE91ECAF91E005064F4 /* sources */ = {
+			isa = PBXGroup;
+			children = (
+				8F5EB0BC22BBBED900141465 /* mail-sign-in */,
+				82B6638007C6A5674DDF380B /* core */,
+				82B66C09E3CDA812DDFDF859 /* ui */,
+				82B660F80EC64A0894E987F6 /* utils */,
+				82B664E33F259CADD8564C0D /* MRMailSDKConstants.m */,
+				82B66FAB6995601B80F69382 /* MRMailSDKConstants.h */,
+				AC20FFEA1ECAFC0B005064F4 /* MRMailSDK.h */,
+				AC20FFEB1ECAFC0B005064F4 /* MRMailSDK.m */,
+				82B66BA82B60C450E0983236 /* MRMailSDK+Private.h */,
+				8F6C3B9F22FAB6E800B524B6 /* MRSDKAuthorizationResult.h */,
+				8F6C3BA522FABF6000B524B6 /* MRSDKAuthorizationResult.m */,
+			);
+			name = sources;
+			path = "mr-mail-sdk/sources";
+			sourceTree = SOURCE_ROOT;
+		};
+		ACF85C2A1EB0A6FB00534CE4 = {
+			isa = PBXGroup;
+			children = (
+				ACF85C361EB0A6FB00534CE4 /* mr-mail-sdk */,
+				ACF85C351EB0A6FB00534CE4 /* Products */,
+				AC2000501ECC9B69005064F4 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		ACF85C351EB0A6FB00534CE4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				ACF85C341EB0A6FB00534CE4 /* MRMailSDK.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		ACF85C361EB0A6FB00534CE4 /* mr-mail-sdk */ = {
+			isa = PBXGroup;
+			children = (
+				AC20FFE91ECAF91E005064F4 /* sources */,
+				AC1136421EB22CFA007E5E37 /* Info.plist */,
+				85CC3EC92063A4580012559E /* module.map */,
+			);
+			path = "mr-mail-sdk";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		ACF85C311EB0A6FB00534CE4 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8F6C3BA122FAB6E800B524B6 /* MRSDKAuthorizationResult.h in Headers */,
+				8F3EFB5722FACE4400136617 /* NSMutableURLRequest+MRSDK.h in Headers */,
+				85CC3ECC2063A68C0012559E /* MRMailSignInButton.h in Headers */,
+				AC20FFEC1ECAFC0B005064F4 /* MRMailSDK.h in Headers */,
+				82B66913D7B040638A91E01E /* UIApplication+MRSDK.h in Headers */,
+				ACC49BE11ECD8D870021C69C /* MRMailWebViewController.h in Headers */,
+				8F3EFB5B22FAD3DA00136617 /* MRSDKOAuthTokenResponseParser.h in Headers */,
+				82B661D67BDFA6B3A84B70A6 /* MRMailAuthParameters.h in Headers */,
+				82B66E508277F1634F11CFD0 /* MRMailAuthParameters+Protected.h in Headers */,
+				82B661CE2326C333FEF6D58E /* MRMailAuthParameters+QueryItems.h in Headers */,
+				8F2CA42B1F263C7800C1B94F /* MRSafariSessionAuthHandler.h in Headers */,
+				858E0F512063F7A000286AFC /* NSBundle+MRSDK.h in Headers */,
+				82B665A9657B42563FD6E8DC /* MRMailSDKConstants.h in Headers */,
+				82B663FCE82AF0111156A281 /* NSError+MRSDK.h in Headers */,
+				82B669CB8EBD1C6E043F7098 /* MRInternalAuthHandler.h in Headers */,
+				8F6C3B9D22F9DD8500B524B6 /* NSData+MRSDK.h in Headers */,
+				82B669885D88BD29E04E28C8 /* MRWebViewAuthHandler.h in Headers */,
+				82B66B32D87BEAF216CDD281 /* NSURL+MRSDK.h in Headers */,
+				8F44869B1F26310900E7D646 /* MRMailAuthRedirectURLParser.h in Headers */,
+				82B6695881C8CBA239F21167 /* MRSafariAuthHandler.h in Headers */,
+				8F2AFCCB22BA20FF0015AE50 /* MRMailSDK+MailSignIn.h in Headers */,
+				82B66CF9E4E32AC4FD42E5F2 /* MRMailSDK+Private.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		ACF85C331EB0A6FB00534CE4 /* mr-mail-sdk */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ACF85C3C1EB0A6FB00534CE4 /* Build configuration list for PBXNativeTarget "mr-mail-sdk" */;
+			buildPhases = (
+				ACF85C2F1EB0A6FB00534CE4 /* Sources */,
+				ACF85C301EB0A6FB00534CE4 /* Frameworks */,
+				ACF85C311EB0A6FB00534CE4 /* Headers */,
+				ACF85C321EB0A6FB00534CE4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "mr-mail-sdk";
+			productName = "auth-sdk";
+			productReference = ACF85C341EB0A6FB00534CE4 /* MRMailSDK.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		ACF85C2B1EB0A6FB00534CE4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = Mail.Ru;
+				TargetAttributes = {
+					ACF85C331EB0A6FB00534CE4 = {
+						CreatedOnToolsVersion = 8.3.2;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = ACF85C2E1EB0A6FB00534CE4 /* Build configuration list for PBXProject "mr-mail-sdk" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				English,
+				en,
+				ru,
+			);
+			mainGroup = ACF85C2A1EB0A6FB00534CE4;
+			productRefGroup = ACF85C351EB0A6FB00534CE4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				ACF85C331EB0A6FB00534CE4 /* mr-mail-sdk */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		ACF85C321EB0A6FB00534CE4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				85CC3ECF2063B33E0012559E /* MRMailSDKUI.xcassets in Resources */,
+				8552367C2063BF730072BFFC /* MRMailSDKUI.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		ACF85C2F1EB0A6FB00534CE4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8F3EFB5822FACE4400136617 /* NSMutableURLRequest+MRSDK.m in Sources */,
+				8F6C3B9E22F9DD8500B524B6 /* NSData+MRSDK.m in Sources */,
+				AC20FFED1ECAFC0B005064F4 /* MRMailSDK.m in Sources */,
+				82B6606E80161CAC496D27E3 /* UIApplication+MRSDK.m in Sources */,
+				82B66E9BB01F7629D86EED96 /* MRMailAuthParameters.m in Sources */,
+				ACC49BE21ECD8D870021C69C /* MRMailWebViewController.m in Sources */,
+				858E0F522063F7A000286AFC /* NSBundle+MRSDK.m in Sources */,
+				8F6C3BA622FABF6000B524B6 /* MRSDKAuthorizationResult.m in Sources */,
+				8F2CA42C1F263C7800C1B94F /* MRSafariSessionAuthHandler.m in Sources */,
+				8F44869C1F26310900E7D646 /* MRMailAuthRedirectURLParser.m in Sources */,
+				82B66FE702049C5DE0F66B14 /* MRMailAuthParameters+QueryItems.m in Sources */,
+				82B6653120EE503D7EFD073E /* MRMailSDKConstants.m in Sources */,
+				82B662E62FF73E77D9E554B9 /* NSError+MRSDK.m in Sources */,
+				82B66CE63DE49EA273817E86 /* MRWebViewAuthHandler.m in Sources */,
+				82B660FA56E4400954A92B6A /* NSURL+MRSDK.m in Sources */,
+				85CC3ECD2063A68C0012559E /* MRMailSignInButton.m in Sources */,
+				82B6666286F582FE3B413A6F /* MRSafariAuthHandler.m in Sources */,
+				8F3EFB5C22FAD3DA00136617 /* MRSDKOAuthTokenResponseParser.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		8552367E2063BF730072BFFC /* MRMailSDKUI.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8552367D2063BF730072BFFC /* en */,
+				8552367F2063BF800072BFFC /* ru */,
+			);
+			name = MRMailSDKUI.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		ACF85C3A1EB0A6FB00534CE4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_EMPTY_CONTEXT = YES;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		ACF85C3B1EB0A6FB00534CE4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_EMPTY_CONTEXT = YES;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		ACF85C3D1EB0A6FB00534CE4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "$(SRCROOT)/mr-mail-sdk/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MARKETING_VERSION = 1.0;
+				MODULEMAP_FILE = "$(SRCROOT)/mr-mail-sdk/module.map";
+				PRODUCT_BUNDLE_IDENTIFIER = "ru.mail.auth-sdk";
+				PRODUCT_NAME = MRMailSDK;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		ACF85C3E1EB0A6FB00534CE4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "$(SRCROOT)/mr-mail-sdk/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MARKETING_VERSION = 1.0;
+				MODULEMAP_FILE = "$(SRCROOT)/mr-mail-sdk/module.map";
+				PRODUCT_BUNDLE_IDENTIFIER = "ru.mail.auth-sdk";
+				PRODUCT_NAME = MRMailSDK;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		ACF85C2E1EB0A6FB00534CE4 /* Build configuration list for PBXProject "mr-mail-sdk" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ACF85C3A1EB0A6FB00534CE4 /* Debug */,
+				ACF85C3B1EB0A6FB00534CE4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ACF85C3C1EB0A6FB00534CE4 /* Build configuration list for PBXNativeTarget "mr-mail-sdk" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ACF85C3D1EB0A6FB00534CE4 /* Debug */,
+				ACF85C3E1EB0A6FB00534CE4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = ACF85C2B1EB0A6FB00534CE4 /* Project object */;
+}

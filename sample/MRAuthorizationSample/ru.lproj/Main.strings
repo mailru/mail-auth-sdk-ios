@@ -1,0 +1,12 @@
+
+/* Class = "UILabel"; text = "Use test hosts for internal authorization"; ObjectID = "8qs-a4-KDo"; */
+"8qs-a4-KDo.text" = "Use test hosts for internal authorization";
+
+/* Class = "UIButton"; normalTitle = "PRESS FOR INTERNAL AUTHORIZATION"; ObjectID = "GZC-RY-Wjy"; */
+"GZC-RY-Wjy.normalTitle" = "PRESS FOR INTERNAL AUTHORIZATION";
+
+/* Class = "UILabel"; text = "Use Safari for internal authorization"; ObjectID = "RfY-dH-sHa"; */
+"RfY-dH-sHa.text" = "Use Safari for internal authorization";
+
+/* Class = "UIButton"; normalTitle = "PRESS FOR AUTHORIZATION"; ObjectID = "dYi-ae-NWa"; */
+"dYi-ae-NWa.normalTitle" = "PRESS FOR AUTHORIZATION";
