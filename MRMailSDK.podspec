@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "MRMailSDK"
-  s.version      = "1.4.1"
+  s.version      = "1.4.2"
   s.summary      = "Library for Mail.Ru OAuth2 authorization"
   s.platform     = :ios
   s.ios.deployment_target = '9.0'
