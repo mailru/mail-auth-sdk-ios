@@ -23,10 +23,6 @@
 #import "MRSafariSessionAuthHandler.h"
 #import "MRMailSDK+Private.h"
 
-#ifdef MRSDK_MAIL_SIGN_IN
-#import "MRMailSDK+MailSignIn.h"
-#import <MailSignIn/MailSignIn.h>
-#endif
 
 static NSString *const MRMailScheme = @"mr-mail-oauth2";
 static NSString *const MRMailClientID = @"mail-ios";
@@ -197,19 +193,6 @@ static const NSUInteger MRCodeVerifierSizeInBytes = 32;
     self.internalProofKeyForCodeExchangeEnabled = @(proofKeyForCodeExchangeEnabled);
 }
 
-#ifdef MRSDK_MAIL_SIGN_IN
-- (MRMSignInConfiguration *)mailSignInConfiguration {
-    if (!_mailSignInConfiguration) {
-        _mailSignInConfiguration = MRMSignInConfiguration.defaultConfiguration;
-    }
-    return [_mailSignInConfiguration copy];
-}
-
-- (void)getMailApplicationLoggedInAccountInfosWithCompletionHandler:(void (^)(NSArray<MRMAccountInfo *> *, NSError *))completionHandler {
-    MRMSignIn *signIn = [[MRMSignIn alloc] initWithConfiguration:self.mailSignInConfiguration];
-    [signIn getLoggedInAccountInfosWithCompletionHandler:completionHandler];
-}
-#endif
 
 #pragma mark - MRInternalAuthHandlerDelegate
 
@@ -328,18 +311,7 @@ static const NSUInteger MRCodeVerifierSizeInBytes = 32;
 }
 
 - (void)authorizeNonInteractivelyWithCompletionHandler:(void(^)(NSString *authorizationCode))comletionHandler {
-#ifdef MRSDK_MAIL_SIGN_IN
-    if (!self.usesMailApplicationCredentialsToNonInteractivelyLogin || self.loginHint == nil) {
-        comletionHandler(nil);
-        return;
-    }
-    MRMSignIn *signIn = [[MRMSignIn alloc] initWithConfiguration:self.mailSignInConfiguration];
-    [signIn signInWithAccount:self.loginHint clientID:self.clientID completionHandler:^(NSString *authorizationCode, NSError *error) {
-        comletionHandler(authorizationCode);
-    }];
-#else
     comletionHandler(nil);
-#endif
 }
 
 - (void)performInternalAuthorization {
